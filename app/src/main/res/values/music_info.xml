@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="music_files">
+        <item>@raw/dreams</item>
+        <item>@raw/dubstep</item>
+        <item>@raw/endlessmotion</item>
+        <item>@raw/ukulele</item>
+        <item>@raw/creativeminds</item>
+        <item>@raw/anewbeginning</item>
+        <item>@raw/littleidea</item>
+        <item>@raw/rcrobots</item>
+    </array>
+    <string-array name="music_titles">
+        <item>Dreams</item>
+        <item>Dubstep</item>
+        <item>Endless Motion</item>
+        <item>Ukulele</item>
+        <item>Creative Minds</item>
+        <item>A New Beginning</item>
+        <item>Little Idea</item>
+        <item>RC Robots Main Theme</item>
+    </string-array>
+    <string-array name="music_authors">
+        <item>Bensound</item>
+        <item>Bensound</item>
+        <item>Bensound</item>
+        <item>Bensound</item>
+        <item>Bensound</item>
+        <item>Bensound</item>
+        <item>Bensound</item>
+        <item>prodnza</item>
+    </string-array>
+    <array name="music_backgrounds">
+        <item>@drawable/dreams</item>
+        <item>@drawable/dubstep</item>
+        <item>@drawable/endlessmotion</item>
+        <item>@drawable/ukulele</item>
+        <item>@drawable/creativeminds</item>
+        <item>@drawable/anewbeginning</item>
+        <item>@drawable/littleidea</item>
+        <item>@drawable/rcrobots</item>
+    </array>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicPlayerActivity">
+
+    <ImageView
+        android:id="@+id/MusicPlayerBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/MusicPlayerPlayButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/MusicPlayerSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/play" />
+
+    <ImageView
+        android:id="@+id/MusicPlayerPauseButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/MusicPlayerPlayButton"
+        app:layout_constraintEnd_toEndOf="@+id/MusicPlayerPlayButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/MusicPlayerPlayButton"
+        app:layout_constraintTop_toTopOf="@+id/MusicPlayerPlayButton"
+        app:layout_constraintVertical_bias="0.57"
+        app:srcCompat="@drawable/pause" />
+
+    <SeekBar
+        android:id="@+id/MusicPlayerSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/MusicPlayerBackwardsButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/MusicPlayerPlayButton"
+        app:layout_constraintEnd_toStartOf="@+id/MusicPlayerPlayButton"
+        app:layout_constraintHorizontal_bias="0.80"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/MusicPlayerPlayButton"
+        app:srcCompat="@drawable/backwards" />
+
+    <ImageView
+        android:id="@+id/MusicPlayerForwardsButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/MusicPlayerPlayButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.20"
+        app:layout_constraintStart_toEndOf="@+id/MusicPlayerPlayButton"
+        app:layout_constraintTop_toTopOf="@+id/MusicPlayerPlayButton"
+        app:srcCompat="@drawable/forwards" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

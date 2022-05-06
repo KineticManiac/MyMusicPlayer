@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <EditText
+        android:id="@+id/SignupUsername"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/SignupEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/SignupUsername"
+        app:layout_constraintStart_toStartOf="@+id/SignupUsername"
+        app:layout_constraintTop_toBottomOf="@+id/SignupUsername"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/SignupEmail2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/email2"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/SignupUsername"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/SignupUsername"
+        app:layout_constraintTop_toBottomOf="@+id/SignupEmail"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/SignupPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/SignupUsername"
+        app:layout_constraintStart_toStartOf="@+id/SignupUsername"
+        app:layout_constraintTop_toBottomOf="@+id/SignupEmail2"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/SignupPassword2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/password2"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/SignupUsername"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/SignupUsername"
+        app:layout_constraintTop_toBottomOf="@+id/SignupPassword"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/SignupSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/signup"
+        app:layout_constraintEnd_toEndOf="@+id/SignupPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/SignupPassword2" />
+
+    <ImageView
+        android:id="@+id/SignupProfilePicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/default_profile_picture" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/profile_picture"
+        app:layout_constraintEnd_toEndOf="@+id/SignupProfilePicture"
+        app:layout_constraintStart_toStartOf="@+id/SignupProfilePicture"
+        app:layout_constraintTop_toBottomOf="@+id/SignupProfilePicture" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

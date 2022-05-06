@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">My Music Player</string>
+    <string name="login">Log in</string>
+    <string name="signup">Sign up</string>
+    <string name="umail">Username or E-mail</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="password2">Password (again)</string>
+    <string name="email">E-mail</string>
+    <string name="email2">E-mail (again)</string>
+    <string name="email_mismatch">E-mail doesn\'t match.</string>
+    <string name="password_mismatch">Password doesn\'t match.</string>
+    <string name="username_already_exists">Username already exists.</string>
+    <string name="email_is_used">E-mail is already used.</string>
+    <string name="invalid_credentials">Invalid credentials.</string>
+    <string name="invalid_credentials_3">
+        You have entered your credentials incorrectly for 3 times. Redirecting to sign-up.
+    </string>
+    <string name="email_subject">Your registration is complete!</string>
+    <string name="email_message">
+        Hello %1$s!\n
+        We\'re happy to see you on board!
+    </string>
+    <string name="music_status_buy">Buy</string>
+    <string name="music_status_bought">Bought</string>
+    <string name="music_toast_bought">You have bought %1$s.</string>
+    <string name="music_toast_already_have">You already have %1$s.</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="music_archive">Music Archive</string>
+    <string name="my_playlists">My Playlists</string>
+    <string name="logout">Log out</string>
+    <string name="duration_style_short">%1$02d:%2$02d.%3$03d</string>
+    <string name="duration_style_long">%1$d:%2$02d:%3$02d.%4$03d</string>
+    <string name="author_duration">%1$s - %2$s</string>
+    <string name="bad_username">Please enter a valid username.</string>
+    <string name="bad_email">Please enter a valid E-mail.</string>
+    <string name="bad_password">Please enter a valid password.</string>
+    <string name="bad_playlist_title">Title may not be empty.</string>
+    <string name="double_playlist_title">A playlist by that name already exists.</string>
+</resources>

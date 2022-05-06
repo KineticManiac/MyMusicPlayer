@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:id="@+id/MenuProfilePicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        app:srcCompat="@drawable/default_profile_picture" />
+
+    <TextView
+        android:id="@+id/MenuUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/MenuProfilePicture"
+        app:layout_constraintStart_toStartOf="@+id/MenuProfilePicture"
+        app:layout_constraintTop_toBottomOf="@+id/MenuProfilePicture" />
+
+    <Button
+        android:id="@+id/MenuMusicArchive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/music_archive"
+        app:layout_constraintEnd_toEndOf="@+id/MenuMyPlaylists"
+        app:layout_constraintStart_toStartOf="@+id/MenuMyPlaylists"
+        app:layout_constraintTop_toBottomOf="@+id/MenuMyPlaylists" />
+
+    <Button
+        android:id="@+id/MenuMyPlaylists"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/my_playlists"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <Button
+        android:id="@+id/MenuLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        app:layout_constraintEnd_toEndOf="@+id/MenuMyPlaylists"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="@+id/MenuMyPlaylists"
+        app:layout_constraintTop_toBottomOf="@+id/MenuMusicArchive" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobilprogproje">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MobilProgProje">
+        <activity
+            android:name=".MusicPlayerActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlaylistActivity" />
+        </activity>
+        <activity
+            android:name=".MusicPickerActivity"
+            android:exported="false"
+            android:label="Pick a music">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlaylistActivity" />
+        </activity>
+        <activity
+            android:name=".PlaylistActivity"
+            android:exported="false"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MyPlaylistsActivity" />
+        </activity>
+        <activity
+            android:name=".MyPlaylistsActivity"
+            android:exported="false"
+            android:label="My Playlists"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuActivity" />
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false"
+            android:label="My Program"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".MusicArchiveActivity"
+            android:exported="false"
+            android:label="Music Archive">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuActivity" />
+        </activity>
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false"
+            android:label="Sign up">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="My Music Player">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
