@@ -24,6 +24,7 @@ public class MusicPlayerActivity extends AppCompatActivity {
     ImageView playButton, pauseButton, background;
     SeekBar seekBar;
     Playlist.Cursor cursor;
+    PlayPauseBroadcastParser broadcastParser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,15 @@ public class MusicPlayerActivity extends AppCompatActivity {
 
         playButton.setOnClickListener(view -> play());
         pauseButton.setOnClickListener(view -> pause());
+
+        broadcastParser = new PlayPauseBroadcastParser(this);
+        broadcastParser.setOnBroadcastReceivedListener(play -> {
+            if (play) {
+                play();
+            } else {
+                pause();
+            }
+        });
 
         seekBar = findViewById(R.id.MusicPlayerSeekBar);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
